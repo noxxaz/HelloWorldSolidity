@@ -6,8 +6,9 @@ contract HelloWorld {
 
     string public message = "Hello World!";
 
-    function setMessage(string memory _message) public  { 
-        message = _message;
-    }
+    string public customMessage = "Custom message not set";
 
+    function setMessage(string memory _message) public  { 
+        customMessage = _message;
+    }
 }
