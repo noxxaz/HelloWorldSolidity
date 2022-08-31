@@ -4,16 +4,19 @@ pragma solidity ^0.8.8; // Require Solidity v0.8.8 or above
 
 contract HelloWorld {
 
-    string public customMessage = "Custom message not set";
+    string private _hwMessage = "Hello World";
+    string private _customMessage = "Custom message not set"; // Default value
 
-    function setMessage(string memory _message) public  { 
-        customMessage = _message;
+    function getMessage() public view returns (string memory) {
+        return _hwMessage;
     }
 
-    function message() public pure returns (string memory) {
-    
-        string memory hwMessage = "Hello World!";
-        return hwMessage;
-
+    function setCustomMessage(string memory _message) public  { 
+        _customMessage = _message;
     }
+
+    function getCustomMessage() public view returns (string memory) {
+        return _customMessage;
+    }
+
 }
