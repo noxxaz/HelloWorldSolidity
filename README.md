@@ -33,4 +33,4 @@ This contract is contract-factory that deploys HelloWorld contracts in a public 
 I just put this together for my own fun and learning. If you like it, send me a message on Twitter here: [https://twitter.com/moredeploys](https://twitter.com/moredeploys)
 
 If you're tryna get deeper into Solidity and smart contracts, I highly recommend this course. It's currently the definitive source on the topic.
-[https://github.com/noxxaz/full-blockchain-solidity-course-js](https://github.com/noxxaz/full-blockchain-solidity-course-js)
+[https://github.com/smartcontractkit/full-blockchain-solidity-course-js](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)
