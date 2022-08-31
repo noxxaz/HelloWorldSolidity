@@ -17,11 +17,11 @@ contract hwFactory {
         hwArray[_hwIndex].setMessage(_message);
     }
 
-    // keep getting type error on below... 😭
+    function hwMessage(uint256 _hwIndex) public view returns (string memory){
+        return hwArray[_hwIndex].message();
 
-    // function hwMessage(uint256 _hwIndex) public view returns (string memory){
-    //     return hwArray[_hwIndex].message;
-    // }
+    }
+    // keep getting type error on below... 😭
 
     // function hwCustomMessage(uint256 _hwIndex) public view returns (string memory){
     //     return hwArray[_hwIndex].customMessage;
