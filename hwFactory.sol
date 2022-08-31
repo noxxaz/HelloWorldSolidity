@@ -13,18 +13,16 @@ contract hwFactory {
         hwArray.push(helloWorld);
     }
 
-    function hwSetCustomMessage(uint256 _hwIndex, string calldata _message) public {
-        hwArray[_hwIndex].setMessage(_message);
-    }
-
     function hwMessage(uint256 _hwIndex) public view returns (string memory){
-        return hwArray[_hwIndex].message();
-
+        return hwArray[_hwIndex].getMessage();
     }
-    // keep getting type error on below... 😭
 
-    // function hwCustomMessage(uint256 _hwIndex) public view returns (string memory){
-    //     return hwArray[_hwIndex].customMessage;
-    // }
+    function hwSetCustomMessage(uint256 _hwIndex, string calldata _message) public {
+        hwArray[_hwIndex].setCustomMessage(_message);
+    }
+
+    function hwCustomMessage(uint256 _hwIndex) public view returns (string memory){
+        return hwArray[_hwIndex].getCustomMessage();
+    }
 
 }
