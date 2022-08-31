@@ -4,7 +4,7 @@
 
 This is a simple set of Solidity smart contracts to help introduce and explore Solidity.
 
-Use the Remix IDE located here to run in an Ethereum VM or depoyt it to an Ethereum testnet 😯
+Use the Remix IDE located here to run in an Ethereum VM or depoy it to an Ethereum testnet 😯
  [https://remix.ethereum.org/](https://remix.ethereum.org/)
 
 
@@ -20,7 +20,7 @@ This file is a smart contract that exposes 3 public methods:
 ### hwFactory.sol
 This contract is contract-factory that deploys HelloWorld contracts in a public array and exposes public methods to call the getters and setters.
 
-- `createHwContract()` deploys an instance of a HelloWorld smart contract. Accessing the public hwArray via the index will return the contract location.
+- `createHwContract()` deploys an instance of a HelloWorld smart contract. Accessing the public `hwArray` via the index will return the contract location.
 
 - `hwMessage()` calls the `getMessage` function on a deployed contract. Takes uint array index as parameter and returns string.
 
