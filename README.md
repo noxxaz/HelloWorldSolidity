@@ -2,10 +2,11 @@
 
 ## "Hello World" Smart Contract Factory sample
 
-This is a simple set of Solidity smart contracts to help introduce and explore Solidity. 
+This is a simple set of Solidity smart contracts to help introduce and explore Solidity.
 
-Use the Remix IDE located here to run it:
+Use the Remix IDE located here to run in an Ethereum VM or depoyt it to an Ethereum testnet 😯
  [https://remix.ethereum.org/](https://remix.ethereum.org/)
+
 
 ### HelloWorld.sol
 This file is a smart contract that exposes 3 public methods:
@@ -28,7 +29,8 @@ This contract is contract-factory that deploys HelloWorld contracts in a public 
 - `hwSetCustomMessage` calls the `setCustomMessage` function on a deployed contract.
 
 
+## What's next?
+I just put this together for my own fun and learning. If you like it, send me a message on Twitter here: [https://twitter.com/moredeploys](https://twitter.com/moredeploys)
 
-
-
-Just put this together for fun and learning. If you like it, send me a message on Twitter
+If you're tryna get deeper into Solidity and smart contracts, I highly recommend this course. It's currently the definitive source on the topic.
+[https://github.com/noxxaz/full-blockchain-solidity-course-js](https://github.com/noxxaz/full-blockchain-solidity-course-js)
