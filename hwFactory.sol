@@ -9,8 +9,7 @@ contract hwFactory {
     HelloWorld[] public hwArray;
 
     function createHwContract() public {
-        HelloWorld helloWorld = new HelloWorld();
-        hwArray.push(helloWorld);
+        hwArray.push(new HelloWorld());
     }
 
     function hwMessage(uint256 _hwIndex) public view returns (string memory){
